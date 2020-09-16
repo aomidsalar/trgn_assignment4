@@ -16,5 +16,3 @@ This program, ensg2hugo.py, will take a csv file and print a dataframe in which 
 ## Contact
 aomidsal@usc.edu
    
-# trgn_assignment4
-# trgn_assignment4
