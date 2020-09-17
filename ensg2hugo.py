@@ -10,7 +10,6 @@ for each_line_of_text in fileinput.input("/home/jupyter-aomidsal/data/Homo_sapie
     gene=re.findall(r'^.*?\t.*?\t(gene)\t', each_line_of_text, re.I)
     gene_id=re.findall(r'gene_id "(ENSG\d*?)"', each_line_of_text, re.I)
     gene_name=re.findall(r'gene_name "(.*?)"', each_line_of_text, re.I)
-    homo_sapiens_split= re.split('\t', each_line_of_text)
     if gene:
         if gene_id:
             if gene_name:
