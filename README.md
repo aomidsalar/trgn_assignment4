@@ -7,6 +7,7 @@ This program, ensg2hugo.py, will take a csv file and print a dataframe in which 
     * In order to download the gtf file, you can use the command `curl http://ftp.ensembl.org/pub/release-75/gtf/homo_sapiens/Homo_sapiens.GRCh37.75.gtf.gz`. This will download the file in zipped form. In order to unzip a file, use the command `gunzip Homo_sapiens.GRCh37.75.gtf.gz`.
 * The program `ensg2hugo.py` that you downloaded using git can then be run. Make sure the Homo\_sapiens.GRCh37.75.gtf file is in the same directory as the python program. The column number option should have a prefix of -f, and you will have the option of "-f[0-9]. If no column number is indicated, it will run the program on the first column of your csv file.
 * If there are no matches in the dictionary, the ENSG gene name will not be replaced. In this case, it may be worthwhile to add a different reference file containing all your desired gene names.
+* The file expres.anal.csv, which can be found in this repository, contains a unit test. This file contains the ENSEMBL gene names in the second column. To run this unit test, you can run the command `ensg2hugo.py -f2 expression_analysis.tsv >expression_analysis.hugo.tsv`
 ## Dependencies
 * git
 * file input
